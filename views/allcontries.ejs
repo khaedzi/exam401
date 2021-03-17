@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    
+    
+<% data.forEach(data=>{%>
+<section>
+<p><%= data.cont %></p>
+<p><%= data.TotalConfirmed %></p>
+<p><%= data.TotalDeaths %></p>
+<p><%= data.TotalRecovered %></p>
+<p><%= data.Date %></p>
+<form action="/addtofav" method="POST">
+    <input type="text" name="cont" value="<%= data.cont %>">
+    <input type="text" name="TotalConfirmed" value="<%= data.TotalConfirmed %>">
+    <input type="text" name="TotalDeaths" value="<%= data.TotalDeaths %>">
+    <input type="text" name="Date"value="<%= data.Date %>"> 
+
+    <input type="submit" value="add to my librariys">
+
+
+</form>
+</section>
+
+<%})%>
+
+
+</body>
+</html>

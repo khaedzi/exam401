@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p>TotalConfirmed: <%= data.con %></p>
+<p>TotalDeaths: <%= data.death %></p>
+<p>TotalRecovered: <%= data.rec %></p>
+
+
+<form action="/search" method="POST">
+<input type="text" placeholder="addcontry" name="contry">
+<input type="date" name="" id="" name="start">
+<input type="date" name="" id="" name="end">
+<input type="submit" value ="search">
+</form>
+</body>
+</html>
